@@ -1,0 +1,264 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "popons", sans-serif;
+  background-color: rgb(27, 27, 27);
+  overflow-x: hidden;
+}
+
+.header {
+  height: 90vh;
+  position: relative;
+}
+
+.navbar {
+  height: 110px;
+  width: 100%;
+  background-color: black;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px;
+  z-index: 10;
+  position: fixed;
+  display: flex;
+  text-align: center;
+}
+
+.navbar-box {
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  color: white;
+}
+
+.heading-tertiary {
+  font-size: 3.5rem;
+}
+
+.navbar-list {
+  list-style: none;
+  font-size: 2rem;
+}
+
+.navbar-item {
+  display: inline-block;
+}
+
+.navbar-link:visited,
+.navbar-link:link {
+  text-decoration: none;
+  color: white;
+  padding: 3rem;
+  transition: all 0.2s ease;
+}
+
+.navbar-link:hover {
+  background-color: #da6b1d;
+  color: white;
+}
+
+.header-container {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  color: white;
+}
+
+.header-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  z-index: -1;
+  height: 100%;
+  transform: translate(-50%, -31%);
+  text-align: center;
+  text-transform: uppercase;
+  color: white;
+  background: url("https://www.trifectanutrition.com/hubfs/weight-gain-foods-list-heres-the-top-75-foods-to-eat-to-gain-muscle-1-1.png")
+    no-repeat center center/cover;
+  background-size: cover;
+}
+
+.heading-primary {
+  font-size: 6.5rem;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+#restaurant {
+  color: #da6b1d;
+  font-weight: 800;
+  font-size: 8rem;
+}
+
+.lead {
+  font-size: 1.9rem;
+  font-weight: 600;
+  letter-spacing: 4px;
+  padding: 30px;
+}
+
+/* MENU */
+
+.menu {
+  width: 100%;
+  padding: 10rem 5rem;
+  background-image: linear-gradient(
+    to right bottom,
+    rgb(255, 81, 0),
+    rgba(255, 0, 0, 0.5)
+  );
+}
+
+.menu-heading {
+  font-size: 8rem;
+  text-align: center;
+  text-shadow: 0 0 1rem rgba(0, 0, 0, 0.9);
+  text-transform: uppercase;
+  color: white;
+  font-weight: 700;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
+  justify-self: center;
+  grid-gap: 4rem;
+}
+
+.heading-secondary {
+  font-size: 7rem;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+}
+
+.menu-img1 {
+  height: 45%;
+  width: 100%;
+  background-size: cover;
+
+  background-image: url("vegpizza.jpg");
+}
+.menu-img2 {
+  height: 45%;
+  width: 100%;
+  background-size: cover;
+
+  background-image: url("nonveg.jpg");
+}
+.menu-img3 {
+  height: 45%;
+  width: 100%;
+  background-size: cover;
+
+  background-image: url("burger.jpg");
+}
+.menu-img4 {
+  height: 45%;
+  width: 100%;
+  background-size: cover;
+
+  background-image: url("tacos.jpg");
+}
+.menu-img5 {
+  height: 45%;
+  width: 100%;
+  background-size: cover;
+
+  background-image: url("drinks.jpg");
+}
+
+.menu-img6 {
+  height: 45%;
+  width: 100%;
+  background-size: cover;
+
+  background-image: url("pasta.jpg");
+}
+
+.menu-container {
+  width: 100%;
+  height: 50rem;
+  background-color: white;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
+}
+
+.menu-container:hover {
+  box-shadow: 0 0 5rem rgba(0, 0, 0, 0.4);
+  transform: scale(1.07);
+}
+
+.menu-p {
+  font-size: 1.4rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.menu-title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.price {
+  font-size: 3rem;
+  margin-top: 1rem;
+  text-align: center;
+  color: #da6b1d;
+  text-shadow: 0 0.4rem 2rem rgba(0, 0, 0, 0.4);
+}
+
+/*CONTACT*/
+
+#contact {
+  position: relative;
+}
+#contact::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.7;
+}
+
+.container {
+  right: 15em;
+  left: 15em;
+  margin: 15px;
+  padding: 15px;
+}
+
+.col-12 {
+  color: white;
+  font-size: 15px;
+}
+.btn {
+  font-size: 20px;
+}
+
+input[type="text"],
+input[type="text"] {
+  width: 90%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+}
+
+input[type="text"]:focus,
+input[type="text"]:focus {
+  outline: none;
+}
